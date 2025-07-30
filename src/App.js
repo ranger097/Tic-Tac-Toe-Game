@@ -6,7 +6,7 @@ import Tabel from './Table';
 function App() {
   return (
       <div  className='app'>
-          <Tabel game="X"/>
+          <Tabel />
       </div>
   );
 };

@@ -19,18 +19,21 @@ body{
 }
 
 td {
-  border: 3px solid black;
+  
   aspect-ratio: 1/1;
   height: 10vw;
   width: 10vw;
   text-align: center;
-  background-color: beige;
+  background-color: rgb(0, 0, 0);
+  
   
 }
 
 td:hover {
-  background-color: rgb(182, 182, 255);
+  background-color: rgb(255, 255, 255);
   color: white;
+  
+
 }
 
 td:hover .table-content {
@@ -48,4 +51,26 @@ table {
 
 h1 {
   text-decoration: underline;
+}
+
+
+img {
+  width: 10vw;
+  height: 10vw;
+  margin: -2vw;
+  object-position: center;
+  padding: -2vw;
+  
+}
+
+
+.data-cell {
+
+  object-fit: contain;
+  overflow: hidden;
+  margin: 1vw;
+  
+  border: 2px solid black;
+  
+
 }
