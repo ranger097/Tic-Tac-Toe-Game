@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css'
 
-const Tabel = ({game}) => {
+const Tabel = () => {
+
+    const [maple, setMaple] = useState(Array(9).fill(''));
+
+    function handleClick(event) {
+
+            const clicked = event.target.closest('td[data-cell]');
+
+            const dataName = clicked.dataset.cell;
+
+            if(!dataName) return;
+
+            console.log('you clicked me : ', dataName)
+
+
+
+
+    };
+
+   
     return(
 
-        <table>
+        <table onClick={handleClick}>
             <caption><h1>Tic - Tac - Toe</h1></caption>
             <tr>
                 <td data-cell="0" ><p className="table-content"></p></td>
